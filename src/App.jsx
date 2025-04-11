@@ -16,7 +16,7 @@ function App(){
       <button
         className="botao"
         onClick={()=>{
-          alert('O nome digita foi ' + nome)
+          alert('kkkkkkk vc digitou' + nome)
         }
         }
       >
