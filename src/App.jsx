@@ -4,24 +4,28 @@ function App(){
 
   const [nome, setNome] = useState('Ronaldo')
 
-return(
-  <div>
-    <h3>Pizzaria 2D</h3>
+  return (
+    <div>
+      <h3>Pizzaria 2D</h3>
 
-    <input
-      className="Nome"
-      onChange={(e)=> {setNome(e.target.value)}}
-      type="text" />
+      <input
+        className="nome"
+        onChange={(e)=>{setNome(e.target.value)}}
+        type="text" />
 
       <button
-      className="botao"
-      onClick={()=>{alert(nome)}}
+        className="botao"
+        onClick={()=>{
+          alert('O nome digita foi ' + nome)
+        }
+        }
       >
-        CLIQUE AQUI
+        clica aqui
       </button>
 
-  </div>
-)
+    </div>
+  )
 }
 
 export default App
+ 
